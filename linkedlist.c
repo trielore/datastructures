@@ -4,9 +4,15 @@
 
 linkedlist *create_linkedlist()
 {
+    linkedlist *l = (linkedlist *)malloc(sizeof(linkedlist));
+    l->head = 0;
+    return l;
 }
 void delete_linkedlist(linkedlist *l)
 {
+    int ignore;
+    while (remove_head(l, &ignore));
+    free(l);
 }
 int size_linkedlist(linkedlist *l)
 {
