@@ -20,7 +20,7 @@ if(result)
 endif()
 
 #set (CMAKE_CXX_FLAGS "-Wall -Wextra -Werror")
-set (CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -O1 -g -fsanitize=address -fno-omit-frame-pointer")
+set (CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer")
 # Prevent overriding the parent project's compiler/linker
 # settings on Windows
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)

@@ -18,13 +18,21 @@ linkedlist *create_linkedlist();
 void delete_linkedlist(linkedlist* l);
 void insert_front(linkedlist* l, int value);
 void insert_back(linkedlist* l, int value);
-// boolean replace_value_with(linkedlist* l, int old_value, int new_value);
-// boolean replace_value_at_pos(linkedlist* l, int pos, int new_value);
-boolean get_head(linkedlist* l, int* v);
-boolean get_tail(linkedlist* l, int* v);
+
+int size_linkedlist(linkedlist* l);
+
+node* get_head_node(linkedlist* l);
+int get_node_value(node* v);
+node* get_next(node* l);
+void insert_after(node* it, int value);
+
+void replace_value_with(node* n, int new_value);
+
 boolean remove_head(linkedlist* l, int* v);
 boolean remove_tail(linkedlist* l, int* v);
-int size_linkedlist(linkedlist* l);
+
+boolean get_head_value(linkedlist* l, int* v);
+boolean get_tail_value(linkedlist* l, int* v);
 
 
 #endif

@@ -16,19 +16,40 @@ void delete_linkedlist(linkedlist *l)
 }
 int size_linkedlist(linkedlist *l)
 {
-    return 0;
+	return 0;
 }
 void insert_front(linkedlist *l, int value)
 {
-};
+}
 void insert_back(linkedlist *l, int value)
 {
 }
-boolean get_head(linkedlist *l, int *v)
+node* get_head_node(linkedlist* l) 
+{
+   return 0;
+}
+
+int get_node_value(node* v) 
+{
+	return -1;
+}
+
+node* get_next(node* it)
+{
+    return 0;
+}
+void insert_after(node* it, int value)
+{
+}
+
+void replace_value_with(node* n, int new_value) {
+}
+
+boolean get_head_value(linkedlist *l, int *v)
 {
     return FALSE;
 }
-boolean get_tail(linkedlist *l, int *v)
+boolean get_tail_value(linkedlist *l, int *v)
 {
     return FALSE;
 }
